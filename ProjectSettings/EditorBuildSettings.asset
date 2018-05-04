@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: b83c828c79fa40f4d9230d6c6d08d50a
+  - enabled: 1
+    path: Assets/Scenes/London.unity
+    guid: 3fc4b221c912ff0409cd9845222e5d79
+  - enabled: 1
+    path: Assets/Scenes/Paris.unity
+    guid: 8ebe1d66bf83c3c44a2c8805a85538cc
+  - enabled: 1
+    path: Assets/Scenes/Safari.unity
+    guid: 96926ab1e1a1ed14d90215b83a6470a2
