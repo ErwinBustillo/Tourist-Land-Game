@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Paper : MonoBehaviour {
 
+
+	public string Message;
+
 	void OnEnable(){
 		//TODO mostrar el texto en la pantalla del jugador
 	}

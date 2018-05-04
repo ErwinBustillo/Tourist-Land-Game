@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 54323443150031294}
   - component: {fileID: 136474783554030224}
   m_Layer: 0
-  m_Name: Ezequiel Pref
+  m_Name: Ezequiel
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
