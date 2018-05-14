@@ -6,45 +6,32 @@ using UnityEngine.UI;
 public class PickUpDetector : MonoBehaviour {
 
 
+	public GameObject Brand; 
 
+	void Start(){
+		Brand = GameObject.FindGameObjectWithTag ("Brand");
+	}
 	// si entra el player en contacto con el objeto
 	void OnTriggerEnter(Collider other){
 		//Muestre un texto diciendole al jugador que lo puede recoger dependiendo del tipo de objeto
-		Debug.Log("ENTRO " +other.gameObject.name);
+		if (Brand.activeInHierarchy == false) {
+			Brand.SetActive (true);
+		}
+		Brand.transform.Find("Text").GetComponent<Text>().text = "PRESS X TO PICKUP ITEMS";
+		//Debug.Log("ENTRO " +other.gameObject.name);
 	}
 
+	void OnTriggerStay(Collider other){
+		if (Input.GetKeyDown(KeyCode.X)) {
+			Destroy (gameObject);
+			Brand.SetActive (false);
+		}
+	}
 
 	void OnTriggerExit(Collider other){
-		Debug.Log("SALIO" + other.gameObject.name);
-	}
-
-	IEnumerator WaitForPickUp()
-	{
-		while (true)
-		{
-			
-
-			/*
-			//Targeter plyTargeter = playerInvHandler.GetComponent<Targeter>();
-
-			if(plyTargeter.Target == this.transform.parent){
-				pickupCanvas.SetActive(true);// activa el tooltip
-				pickupCanvas.transform.LookAt(Camera.main.transform); // mira al player
-			}
-			else
-			{
-				pickupCanvas.SetActive(false);// desactiva el tooltip
-			}
-
-			if (Input.GetKeyDown(KeyCode.E) && plyTargeter.Target == this.transform.parent)
-			{
-				pickupCanvas.SetActive(false);// desactiva el tooltip
-				GetComponentInParent<Item>().PickUp(playerInvHandler);
-
-			}*/
-
-			yield return null;
-		}
+		
+		Brand.SetActive (false);
+		//Debug.Log("SALIO" + other.gameObject.name);
 	}
 
 }

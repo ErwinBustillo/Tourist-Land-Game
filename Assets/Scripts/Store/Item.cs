@@ -17,6 +17,12 @@ public class Item : MonoBehaviour {
 	public int Price;
 
 
+	void Start(){
+		if (itemType == ITEM_TYPE.Food) {
+			Name = gameObject.name;
+			Price = 0;
+		}
+	}
 	public void OnClickButtonBuy(){
 		//Descontar la plata del jugador
 	}

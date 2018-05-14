@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Invector.CharacterController
-{
+
     public class vThirdPersonController : vThirdPersonAnimator
     {
         protected virtual void Start()
@@ -46,4 +45,3 @@ namespace Invector.CharacterController
             targetRotation = transform.rotation;
         }
     }
-}

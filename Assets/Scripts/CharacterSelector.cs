@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CharacterSelector : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class CharacterSelector : MonoBehaviour {
 
 	int index = 0;
 
+	public Text characterNameText;
 	// Use this for initialization
 	void Start () {
 
@@ -25,6 +27,7 @@ public class CharacterSelector : MonoBehaviour {
 
 		if (characters[0]) {
 			characters [0].SetActive (true);
+			characterNameText.text = characters [0].name;
 		}
 	}
 	
@@ -41,6 +44,7 @@ public class CharacterSelector : MonoBehaviour {
 			index = characters.Length - 1; 
 		}
 		characters [index].SetActive (true);
+		characterNameText.text = characters [index].name;
 	}
 
 	public void OnClickNext(){
@@ -50,10 +54,13 @@ public class CharacterSelector : MonoBehaviour {
 			index = 0; 
 		}
 		characters [index].SetActive (true);
+		characterNameText.text = characters [index].name;
 	}
 
 
 	public void OnClickButtonConfirm(){
+		PlayerPrefs.SetString ("characterSelected", characters [index].name);
+		PlayerPrefs.Save ();
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
 

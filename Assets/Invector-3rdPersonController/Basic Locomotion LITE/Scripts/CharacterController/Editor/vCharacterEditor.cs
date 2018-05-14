@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections;
-using Invector.CharacterController;
+
 using System.Reflection;
 
 [CustomEditor(typeof(vThirdPersonMotor), true)]
