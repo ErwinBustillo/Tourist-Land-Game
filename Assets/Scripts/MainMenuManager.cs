@@ -30,7 +30,7 @@ public class MainMenuManager : MonoBehaviour {
 	}
 
 	public void OnClickButtonPanelExit(){
-        print("Click");
+        print("Click on exit");
         Application.Quit ();
 	}
 

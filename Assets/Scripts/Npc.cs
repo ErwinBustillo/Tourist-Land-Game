@@ -58,8 +58,8 @@ public class Npc : MonoBehaviour {
 
 		// Update animation parameters
 		//anim.SetBool("move", shouldMove);
-		anim.SetFloat ("InputHorizontal", velocity.x);
-		anim.SetFloat ("InputVertical", velocity.y);
+		anim.SetFloat ("Horizontal", velocity.x);
+		anim.SetFloat ("Vertical", velocity.y);
 
 
 		if (agent.remainingDistance < 0.5f)
@@ -86,16 +86,13 @@ public class Npc : MonoBehaviour {
 	}
 
 
-
-
+	// TODO: CONDICIONAR AL NPC PARA QUE CUANDO VEA AL PLAYER DEJE DE PATRULLAR Y LO MIRE(lookat)
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "Player") {
 			defaultState = STATES.idle;
 			transform.LookAt (other.gameObject.transform);
 		}
 	}
-
-
 
 	void OnTriggerExit(Collider other){
 		if (other.gameObject.tag == "Player") {
