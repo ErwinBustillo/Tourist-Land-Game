@@ -24,13 +24,14 @@ public class MainMenuManager : MonoBehaviour {
 
 	}
 
-	public void OnClickButtonPanelShop(){
+    public void OnClickButtonPanelShop() {
 		panelMain.SetActive (false);
 		panelShop.SetActive (true);
 	}
 
 	public void OnClickButtonPanelExit(){
-		Application.Quit ();
+        print("Click");
+        Application.Quit ();
 	}
 
 	public void OnClickExitPanelCharacterSelector(){
