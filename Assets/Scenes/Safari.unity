@@ -1681,6 +1681,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 155668, guid: 77e4fc35718ada841b713d5dd51c825f, type: 2}
+      propertyPath: m_Name
+      value: vThirdPersonCamera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77e4fc35718ada841b713d5dd51c825f, type: 2}
   m_IsPrefabParent: 0
