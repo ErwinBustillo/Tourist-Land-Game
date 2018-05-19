@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 136813308746351696}
   - component: {fileID: 195713531915936316}
   - component: {fileID: 114145292423620972}
+  - component: {fileID: 114525061282428730}
   m_Layer: 0
   m_Name: Npc Barry
   m_TagString: Player
@@ -1435,8 +1436,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1069730236310902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 137.97218, y: 0, z: 60.044895}
+  m_LocalScale: {x: 1, y: 1.3, z: 1}
   m_Children:
   - {fileID: 4489621744236958}
   - {fileID: 4442307510012524}
@@ -2237,7 +2238,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1069730236310902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5cdf5aca9c401d4f98cabd3bb19da54, type: 3}
   m_Name: 
@@ -2245,6 +2246,25 @@ MonoBehaviour:
   defaultState: 1
   waypoints: []
   destPoint: 0
+--- !u!114 &114525061282428730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1069730236310902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a34753988829340b7c6a8ea3a6ba72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  header: Big Ben
+  dialogs:
+  - message: "Hello, I\u2019m am Big but my name is not Ben"
+    isQuestion: 0
+    answers: []
+  - message: "But I know one, I\u2019ll give you a clue. It\u2019s not a person."
+    isQuestion: 0
+    answers: []
 --- !u!136 &136813308746351696
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2252,7 +2272,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1069730236310902}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.27
   m_Height: 1.83
@@ -2680,11 +2700,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 180
+  m_StoppingDistance: 0.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

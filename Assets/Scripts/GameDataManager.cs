@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameDataManager : MonoBehaviour {
 
@@ -18,10 +19,19 @@ public class GameDataManager : MonoBehaviour {
 			//Debug.Log ("NO EXISTE LA LLAVE");
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		//Aqui se maneja lo de las preguntas
 
+
+
+	public void LoadNextScene(){
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
+
+	public void LoadMainMenu(){
+		SceneManager.LoadScene (0);
+	}
+
+	public void ReloadLevel(){
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+	}
+
 }
