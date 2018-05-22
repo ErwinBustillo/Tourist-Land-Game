@@ -209,6 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee7771600c60ff469f1936cc55f3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Brand: {fileID: 0}
+  healthRecoverValue: 10
+  hungryRecoverValue: 15
 --- !u!205 &205000011201749446
 LODGroup:
   m_ObjectHideFlags: 1

@@ -7,6 +7,8 @@ public class PickUpDetector : MonoBehaviour {
 
 
 	public GameObject Brand; 
+	public int healthRecoverValue = 0;
+	public int hungryRecoverValue = 0;
 
 	void Start(){
 		Brand = GameObject.FindGameObjectWithTag ("Brand");
@@ -23,6 +25,8 @@ public class PickUpDetector : MonoBehaviour {
 
 	void OnTriggerStay(Collider other){
 		if (Input.GetKeyDown(KeyCode.X)) {
+			FindObjectOfType<Hungry> ().SubstractHungry (hungryRecoverValue);
+			FindObjectOfType<Health> ().AddLife (healthRecoverValue);
 			Destroy (gameObject);
 			Brand.SetActive (false);
 		}

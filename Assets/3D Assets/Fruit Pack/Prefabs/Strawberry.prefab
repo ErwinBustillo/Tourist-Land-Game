@@ -227,6 +227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Brand: {fileID: 0}
+  healthRecoverValue: 5
+  hungryRecoverValue: 30
 --- !u!205 &205000013950027848
 LODGroup:
   m_ObjectHideFlags: 1

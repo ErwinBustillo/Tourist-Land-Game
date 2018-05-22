@@ -12,8 +12,8 @@ public class GameDataManager : MonoBehaviour {
 			Transform t = GameObject.Find ("StartPoint").transform;
 			GameObject go = Instantiate (Resources.Load<GameObject> (PlayerPrefs.GetString("characterSelected","Ezequiel")),t.position,t.rotation);
 			go.GetComponent<vThirdPersonInput> ().enabled = true;
-			//go.AddComponent<Health> ();
-			//go.AddComponent<Hungry> ();
+			go.AddComponent<Health> ();
+			go.AddComponent<Hungry> ();
 
 		} else {
 			//Debug.Log ("NO EXISTE LA LLAVE");
