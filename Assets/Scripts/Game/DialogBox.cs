@@ -95,6 +95,7 @@ public class DialogBox : MonoBehaviour {
         }
         else
         {
+			FindObjectOfType<vThirdPersonInput>().enabled = true;
             Close();
         }
     }

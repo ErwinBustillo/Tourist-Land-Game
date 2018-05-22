@@ -28,7 +28,10 @@ public class InteractionDialog : MonoBehaviour {
             {
                 if (!GameUIManager.Instance.dialogBox.gameObject.activeInHierarchy)
                 {
+					Cursor.visible = true;
                     //Inabilitar el movimiento del personaje
+					FindObjectOfType<vThirdPersonInput>().enabled = false;
+
                     Debug.Log("Open Dialog");
                     GameUIManager.Instance.OpenDialogBox(header, dialogs);
                 }

@@ -3,20 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.SceneManagement; 
+using UnityEngine.UI; 
 
 public class PhotoManager : MonoBehaviour {
 
+	public Image imagenPhoto;
+
 	// Use this for initialization
 	void Start () {
-		
+		imagenPhoto.gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetKeyDown(KeyCode.P)) { // toma la foto 
+			//StartCoroutine (TakeScreenshot ());
+		}
+		if (Input.GetKeyDown(KeyCode.O)) { // la deja de renderizar
+			//StopCoroutine ("TakeScreenshot");
+		}
 	}
 
-
+	//NO SIRVE
+	/*
 	public IEnumerator TakeScreenshot()
 	{
 
@@ -45,7 +54,10 @@ public class PhotoManager : MonoBehaviour {
 
 		// Set the sprite to the screenshotPreview 
 		//TODO mostrar en algun lado el screenshot que se tomo
+		imagenPhoto.gameObject.SetActive(true);
+		imagenPhoto.sprite = screenshotSprite;
 		//screenshotPreview.GetComponent<Image>().sprite = screenshotSprite;
 
-	}
+	}*/
+
 }
