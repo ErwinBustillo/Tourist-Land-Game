@@ -37,7 +37,7 @@ public class DialogBox : MonoBehaviour {
 
     private void Start()
     {
-        print("hola sart");
+        //print("hola sart");
         nextButton.onClick.AddListener(delegate { OnNextButtonClick(); });
         currentDialog = 0;
     }
@@ -95,6 +95,7 @@ public class DialogBox : MonoBehaviour {
         }
         else
         {
+			Cursor.visible = false;
 			FindObjectOfType<vThirdPersonInput>().enabled = true;
             Close();
         }
@@ -102,7 +103,7 @@ public class DialogBox : MonoBehaviour {
 
     public void Close()
     {
-        Cursor.visible = false;
+       
         header = string.Empty;
         Header = string.Empty;
         DialogMessage = string.Empty;

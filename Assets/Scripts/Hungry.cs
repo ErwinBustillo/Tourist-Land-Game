@@ -14,10 +14,12 @@ public class Hungry : MonoBehaviour {
 	[HideInInspector]
 	public int currentHungry;
 
-	public float delay = 2f; 
+	public float delay = 5f; 
 	private float currentDelay = 0;
 
 	public static Hungry singleton;
+
+
 	// Use this for initialization
 	void Start () {
 		singleton = this;
@@ -41,7 +43,7 @@ public class Hungry : MonoBehaviour {
 				fillAmount = (float)currentHungry / maxHungry;
 				handleBar ();
 			} else {
-				Health.singleton.TakeDamage (20);
+				Health.singleton.TakeDamage (5);
 				currentHungry = maxHungry;
 			}
 

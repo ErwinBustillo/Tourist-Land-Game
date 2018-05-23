@@ -952,41 +952,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 429359404}
   m_Mesh: {fileID: 4300044, guid: 795b46073c17e4e49881beeaf6fb5827, type: 3}
---- !u!1 &434207062 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: b5bf753a841c8d7448a1b7e7883616ec, type: 3}
-  m_PrefabInternal: {fileID: 796477497}
---- !u!54 &434207063
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 434207062}
-  serializedVersion: 2
-  m_Mass: 1500
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!1 &435070593 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 155668, guid: 77e4fc35718ada841b713d5dd51c825f, type: 2}
-  m_PrefabInternal: {fileID: 659335852}
---- !u!114 &435070599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435070593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e35ee460e63163744b40da94ad473b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imagenPhoto: {fileID: 1739350705}
 --- !u!1001 &438926921
 Prefab:
   m_ObjectHideFlags: 0
@@ -1213,6 +1178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a34753988829340b7c6a8ea3a6ba72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Brand: {fileID: 0}
   header: ?????
   dialogs:
   - message: "You found Big ben, it\u2019s this building.The big one with the clock.
@@ -1325,6 +1291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a34753988829340b7c6a8ea3a6ba72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Brand: {fileID: 0}
   header: Phone Box
   dialogs:
   - message: Este es el dialogo de prueba
@@ -2453,6 +2420,11 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114881568036590026, guid: 5b10f1b88e739f44a9d594a96246648c,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b10f1b88e739f44a9d594a96246648c, type: 2}
   m_IsPrefabParent: 0
@@ -2866,6 +2838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a34753988829340b7c6a8ea3a6ba72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Brand: {fileID: 0}
   header: Cabine
   dialogs:
   - message: "Bonjour, si vous voulez voir votre fille suivre ma trace, un indice.
@@ -3982,7 +3955,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.226
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4064,6 +4037,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1416057724 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: b5bf753a841c8d7448a1b7e7883616ec, type: 3}
+  m_PrefabInternal: {fileID: 796477497}
+--- !u!54 &1416057728
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416057724}
+  serializedVersion: 2
+  m_Mass: 1500
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1426261478
 Prefab:
   m_ObjectHideFlags: 0
@@ -4450,7 +4442,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4302008035689700, guid: 30498f35fbb047e42bd6eaa08f5816df, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 137.97218
+      value: 132.21
       objectReference: {fileID: 0}
     - target: {fileID: 4302008035689700, guid: 30498f35fbb047e42bd6eaa08f5816df, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4734,7 +4726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1739350704
 RectTransform:
   m_ObjectHideFlags: 0

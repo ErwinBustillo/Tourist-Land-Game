@@ -33,7 +33,7 @@ public class PickUpDetector : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other){
-		
+		Brand.transform.Find("Text").GetComponent<Text>().text = "";
 		Brand.SetActive (false);
 		//Debug.Log("SALIO" + other.gameObject.name);
 	}
