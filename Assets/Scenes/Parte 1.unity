@@ -322,6 +322,12 @@ Prefab:
       value: Luego de recibir la llamada del sujeto con acento frances, ezequiel fue
         a tomar un bus en la terminal para ir a francia a encontrarse con el.
       objectReference: {fileID: 0}
+    - target: {fileID: 114237661280293702, guid: ee8b95f18bb3ee44ba029d1016e1bf10,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68ceac432fc466a428001ee833a7f8cb,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee8b95f18bb3ee44ba029d1016e1bf10, type: 2}
   m_IsPrefabParent: 0
