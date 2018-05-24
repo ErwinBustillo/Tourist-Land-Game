@@ -19,7 +19,11 @@ public class InteractionDialog : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-		
+		if (Brand.activeInHierarchy == false) {
+			Brand.SetActive (true);
+		}
+		Brand.transform.Find("Text").GetComponent<Text>().text = "PRESS E TO INTERACT";
+
         StartCoroutine(CheckIfDialog());
     }
 
@@ -34,11 +38,7 @@ public class InteractionDialog : MonoBehaviour {
     {
         while (true)
         {
-			if (Brand.activeInHierarchy == false) {
-				Brand.SetActive (true);
-			}
-			Brand.transform.Find("Text").GetComponent<Text>().text = "PRESS E TO INTERACT";
-
+			
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (!GameUIManager.Instance.dialogBox.gameObject.activeInHierarchy)

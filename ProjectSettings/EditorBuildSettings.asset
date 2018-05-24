@@ -9,11 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: b83c828c79fa40f4d9230d6c6d08d50a
   - enabled: 1
+    path: Assets/Scenes/Prologo.unity
+    guid: 0073ef26988d92d4aa36ee3de45cdd45
+  - enabled: 1
     path: Assets/Scenes/London.unity
     guid: 3fc4b221c912ff0409cd9845222e5d79
+  - enabled: 1
+    path: Assets/Scenes/Parte 1.unity
+    guid: 4704093c7cfa93541b87e68280aee7c4
   - enabled: 1
     path: Assets/Scenes/Paris.unity
     guid: 8ebe1d66bf83c3c44a2c8805a85538cc
   - enabled: 1
+    path: Assets/Scenes/Parte 2.unity
+    guid: bd19c07501a77b646831cd64c3292360
+  - enabled: 1
     path: Assets/Scenes/Safari.unity
     guid: 96926ab1e1a1ed14d90215b83a6470a2
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: ce40ffe2235908d449052f7866c472e6

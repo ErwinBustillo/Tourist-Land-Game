@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 70a22c4b03952174caec459ced113cf2
+timeCreated: 1527129211
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Main_Building
+    100002: Plane04
+    100004: //RootNode
+    100006: Road
+    400000: Main_Building
+    400002: Plane04
+    400004: //RootNode
+    400006: Road
+    2100000: mat_BuildingMain
+    2100002: Standard_All
+    2100004: 08_-_Default
+    2100006: Material__19
+    2100008: Cam_Citasi
+    2100010: Concrete_Beton
+    2100012: Cam
+    2100014: mat_CamOrtasiMetal
+    2100016: Material__4
+    2100018: Arka_BinaDisKaplama
+    2100020: mat_Road
+    2100022: Yan_Duvar
+    2300000: Main_Building
+    2300002: Plane04
+    2300004: Road
+    3300000: Main_Building
+    3300002: Plane04
+    3300004: Road
+    4300000: Main_Building
+    4300002: Plane04
+    4300004: Road
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08_-_Default
+    second: {fileID: 2100000, guid: df8d65a164c63ac4da923ccd1142f3e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arka_BinaDisKaplama
+    second: {fileID: 2100000, guid: 950ea6837a7cdf541b69023ebd336447, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cam
+    second: {fileID: 2100000, guid: 523124654498b844a88c1b90e858174c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cam_Citasi
+    second: {fileID: 2100000, guid: 37c91123bce478446b1456c52d1f479d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete_Beton
+    second: {fileID: 2100000, guid: 93841833c40a33448b242ac3e1edad5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__19
+    second: {fileID: 2100000, guid: 925f6d2ee2fe4a64fb28e09e56251e10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__4
+    second: {fileID: 2100000, guid: 36522418ffa8c054eb1076ae977c9379, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Standard_All
+    second: {fileID: 2100000, guid: 5a411a360697f2a44bbf1a91522b4c55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yan_Duvar
+    second: {fileID: 2100000, guid: 07e7a3a263193514f99c93b9bbfbad3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_BuildingMain
+    second: {fileID: 2100000, guid: 130116342d3c2b84e9717b09c48b1a8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_CamOrtasiMetal
+    second: {fileID: 2100000, guid: c072b9d941c58df46b602ee35530d033, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Road
+    second: {fileID: 2100000, guid: 1335b6b37729ca042a0fcc6163fbd5ad, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

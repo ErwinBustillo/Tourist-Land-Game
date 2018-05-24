@@ -21,7 +21,10 @@ public class HistoryTeller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {		
-		panelesDeHistoria [index].SetActive (true);
+		if (panelesDeHistoria.Length != 0) {
+			panelesDeHistoria [index].SetActive (true);
+		}
+
 	}
 
 	//activa el panel siguiente de texto desde el panel actual

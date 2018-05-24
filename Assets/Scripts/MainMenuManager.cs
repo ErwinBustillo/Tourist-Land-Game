@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour {
 
@@ -43,5 +44,9 @@ public class MainMenuManager : MonoBehaviour {
 	public void OnClickExitPanelShop(){
 		panelShop.SetActive (false);
 		panelMain.SetActive (true);
+	}
+
+	public void OnClickCredits(){
+		SceneManager.LoadScene("Final");
 	}
 }

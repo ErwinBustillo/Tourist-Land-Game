@@ -402,7 +402,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1552414429}
-        m_MethodName: OnClickButtonPanelShop
+        m_MethodName: OnClickCredits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1376,7 +1376,7 @@ Transform:
   - {fileID: 2145955659}
   - {fileID: 1260013750}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &884186264
 GameObject:
@@ -2300,7 +2300,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431444, guid: 5e617e90ac28ce7488be6a63235b1f32, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e617e90ac28ce7488be6a63235b1f32, type: 2}
@@ -3115,7 +3115,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shop
+  m_Text: Credits
 --- !u!222 &1826058020
 CanvasRenderer:
   m_ObjectHideFlags: 0

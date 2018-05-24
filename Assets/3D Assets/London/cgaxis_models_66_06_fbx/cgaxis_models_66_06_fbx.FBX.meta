@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: f4d25ec68d3bdf641a445ce795976ab2
+timeCreated: 1527131481
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: cgaxis_models_66_06_01
+    100002: cgaxis_models_66_06_02
+    100004: cgaxis_models_66_06_03
+    100006: //RootNode
+    400000: cgaxis_models_66_06_01
+    400002: cgaxis_models_66_06_02
+    400004: cgaxis_models_66_06_03
+    400006: //RootNode
+    2100000: cgaxis_models_66_06_02
+    2100002: cgaxis_models_66_06_03
+    2100004: cgaxis_models_66_06_01
+    2300000: cgaxis_models_66_06_01
+    2300002: cgaxis_models_66_06_02
+    2300004: cgaxis_models_66_06_03
+    3300000: cgaxis_models_66_06_01
+    3300002: cgaxis_models_66_06_02
+    3300004: cgaxis_models_66_06_03
+    4300000: cgaxis_models_66_06_02
+    4300002: cgaxis_models_66_06_03
+    4300004: cgaxis_models_66_06_01
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_01
+    second: {fileID: 2100000, guid: b669f8cbb4e6f544cb52711b429f70d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_02
+    second: {fileID: 2100000, guid: 5bac72a53c5fc354b85f264cff034898, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_03
+    second: {fileID: 2100000, guid: af39dc08311449c43b997a4ebb6bece0, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_01
+    second: {fileID: 2800000, guid: a72137648166276448e8b55a3a48ee86, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_01_opacity
+    second: {fileID: 2800000, guid: cc89103362c59d54c9e32f10ac426ff9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_02
+    second: {fileID: 2800000, guid: 686106e7280b720479805efcf897e409, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_02_opacity
+    second: {fileID: 2800000, guid: 7cce240cdfe03a24c8b4d373a2fe6b50, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_03
+    second: {fileID: 2800000, guid: ba7a11d6e4a1d6f47b8d691020600ac7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_66_06_03_bump
+    second: {fileID: 2800000, guid: 54dbe4435e895474db3b3f72586f0335, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

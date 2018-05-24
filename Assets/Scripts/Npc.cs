@@ -32,7 +32,8 @@ public class Npc : MonoBehaviour {
 		agent.updatePosition = false;
 
 		waypoints = GameObject.FindGameObjectsWithTag ("Waypoint");
-		//agent.autoBraking = false;
+
+		destPoint = Random.Range (0, waypoints.Length);
 		GotoNextPoint ();
 	}
 
