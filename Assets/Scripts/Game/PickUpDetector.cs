@@ -28,7 +28,7 @@ public class PickUpDetector : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other){
-		if (other.tag == "Player") return;
+		if (other.tag != "Player") return;
 		GameUIManager.Instance.Brand.transform.Find("Text").GetComponent<Text>().text = "";
 		GameUIManager.Instance.Brand.SetActive (false);
 		//Debug.Log("SALIO" + other.gameObject.name);
