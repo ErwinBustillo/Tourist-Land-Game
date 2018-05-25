@@ -16,20 +16,28 @@ public class Animal : MonoBehaviour {
 	private int destPoint = 0;
 
 
-	// Use this for initialization
-	void Start () {
+	void Awake(){
+		
 		anim = GetComponent<Animator> ();
 		agent = GetComponent<NavMeshAgent> ();
 		waypoints = GameObject.FindGameObjectsWithTag ("Waypoint");
-		agent.autoBraking = false;
+	}
+
+
+	// Use this for initialization
+	void Start () {
+		//agent.updatePosition = true;
+		//agent.autoBraking = false;
+		destPoint = Random.Range (0, waypoints.Length);
 		GotoNextPoint ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//ANIMATOR 
-		anim.SetFloat ("Vertical", agent.velocity.z);
-		if (Vector3.Distance(transform.position,waypoints[destPoint].transform.position)< 0.5f)
+
+		anim.SetFloat ("Vertical", agent.velocity.normalized.magnitude);
+
+		if (agent.remainingDistance < 0.5f)
 			GotoNextPoint();
 	}
 
@@ -45,11 +53,16 @@ public class Animal : MonoBehaviour {
 			return;
 
 		// Set the agent to go to the currently selected destination.
-		agent.SetDestination(waypoints[destPoint].transform.position); 
+		//agent.SetDestination(waypoints[destPoint].transform.position);
+		agent.destination = waypoints [destPoint].transform.position;
 
 		// Choose the next point in the array as the destination,
 		// cycling to the start if necessary.
-		destPoint = (destPoint + 1) % waypoints.Length;
+		int nextPoint;
+		do {
+			nextPoint = Random.Range(0, waypoints.Length);
+		} while (nextPoint == destPoint);
+		destPoint = nextPoint;
 	}
 
 

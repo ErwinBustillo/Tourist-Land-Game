@@ -48,7 +48,7 @@ public class InteractionDialog : MonoBehaviour {
 					FindObjectOfType<vThirdPersonInput>().enabled = false;
 					GameUIManager.Instance.Brand.transform.Find("Text").GetComponent<Text>().text = "";
 					GameUIManager.Instance.Brand.SetActive (false);
-                    Debug.Log("Open Dialog");
+                    //Debug.Log("Open Dialog");
                     if (QuestManager.Instance.CheckQuestState(requiredTask))
                     {
                         GameUIManager.Instance.OpenDialogBox(header, dialogs);
