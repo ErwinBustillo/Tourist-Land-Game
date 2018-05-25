@@ -687,9 +687,11 @@ GameObject:
   - component: {fileID: 136544529908240662}
   - component: {fileID: 195342842530157024}
   - component: {fileID: 114089716683930588}
+  - component: {fileID: 135225366356261966}
+  - component: {fileID: 114878820556052522}
   m_Layer: 0
   m_Name: Npc mrblack
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1831,8 +1833,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1602951421170414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 125.798, y: 0, z: 123.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4818366955070040}
@@ -1844,7 +1846,7 @@ Transform:
   - {fileID: 4208123207772868}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4690999263734002
 Transform:
   m_ObjectHideFlags: 1
@@ -2175,7 +2177,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1602951421170414}
   serializedVersion: 2
-  m_Mass: 50
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2206,7 +2208,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1602951421170414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5cdf5aca9c401d4f98cabd3bb19da54, type: 3}
   m_Name: 
@@ -2214,6 +2216,74 @@ MonoBehaviour:
   defaultState: 1
   waypoints: []
   destPoint: 0
+--- !u!114 &114878820556052522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602951421170414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a34753988829340b7c6a8ea3a6ba72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredTask: 1
+  currentTask: 2
+  beforeRequiredQuestDialogs:
+  - message: Go to bus station
+    isQuestion: 0
+    answers: []
+  header: ?????
+  dialogs:
+  - message: "You found Big ben, it\u2019s this building.The big one with the clock.
+      You looks like a foreigner."
+    isQuestion: 0
+    answers: []
+  - message: Oh I Understand now, you are the guy that the french one was refereing
+      about
+    isQuestion: 0
+    answers: []
+  - message: He was saying tha if some foreigner show up here, call a number
+    isQuestion: 0
+    answers: []
+  - message: But after you have to answer some question
+    isQuestion: 0
+    answers: []
+  - message: Wich side of the road, you have to drive in London
+    isQuestion: 1
+    answers:
+    - answerMessage: Right
+      responseDialog:
+        message: Correct
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - answerMessage: Left
+      responseDialog:
+        message: No sir
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+--- !u!135 &135225366356261966
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602951421170414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!136 &136544529908240662
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2606,11 +2676,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 180
+  m_StoppingDistance: 0.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

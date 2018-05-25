@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 114955439078331772}
   m_Layer: 0
   m_Name: Npc Wendy
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,35 +6,29 @@ using UnityEngine.UI;
 public class PickUpDetector : MonoBehaviour {
 
 
-	public GameObject Brand; 
 	public int healthRecoverValue = 0;
 	public int hungryRecoverValue = 0;
-
-	void Start(){
-		Brand = GameObject.FindGameObjectWithTag ("Brand");
-	}
 	// si entra el player en contacto con el objeto
 	void OnTriggerEnter(Collider other){
 		//Muestre un texto diciendole al jugador que lo puede recoger dependiendo del tipo de objeto
-		if (Brand.activeInHierarchy == false) {
-			Brand.SetActive (true);
-		}
-		Brand.transform.Find("Text").GetComponent<Text>().text = "PRESS X TO PICKUP ITEMS";
+		
+		GameUIManager.Instance.Brand.transform.Find("Text").GetComponent<Text>().text = "PRESS X TO PICKUP ITEMS";
 		//Debug.Log("ENTRO " +other.gameObject.name);
 	}
 
 	void OnTriggerStay(Collider other){
+
 		if (Input.GetKeyDown(KeyCode.X)) {
 			FindObjectOfType<Hungry> ().SubstractHungry (hungryRecoverValue);
 			FindObjectOfType<Health> ().AddLife (healthRecoverValue);
 			Destroy (gameObject);
-			Brand.SetActive (false);
+			GameUIManager.Instance.Brand.SetActive (false);
 		}
 	}
 
 	void OnTriggerExit(Collider other){
-		Brand.transform.Find("Text").GetComponent<Text>().text = "";
-		Brand.SetActive (false);
+		GameUIManager.Instance.Brand.transform.Find("Text").GetComponent<Text>().text = "";
+		GameUIManager.Instance.Brand.SetActive (false);
 		//Debug.Log("SALIO" + other.gameObject.name);
 	}
 

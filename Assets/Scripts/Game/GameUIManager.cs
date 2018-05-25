@@ -8,6 +8,8 @@ public class GameUIManager : MonoBehaviour {
 
     [HideInInspector]
     public DialogBox dialogBox;
+    [HideInInspector]
+    public GameObject Brand;
 
     private void Awake()
     {
@@ -15,6 +17,7 @@ public class GameUIManager : MonoBehaviour {
         {
             Instance = this;
             dialogBox = FindObjectOfType<DialogBox>();
+            Brand = GameObject.FindGameObjectWithTag("Brand");
         }
         else
         {
@@ -25,6 +28,7 @@ public class GameUIManager : MonoBehaviour {
     private void Start()
     {
         dialogBox.gameObject.SetActive(false);
+        Brand.SetActive(false);
     }
 
     public void OpenDialogBox(string header, List<Dialog> dialogs)
