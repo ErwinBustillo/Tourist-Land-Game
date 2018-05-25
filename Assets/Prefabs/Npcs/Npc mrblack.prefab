@@ -2213,7 +2213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cdf5aca9c401d4f98cabd3bb19da54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultState: 1
+  agent: {fileID: 0}
+  isMoving: 0
   waypoints: []
   destPoint: 0
 --- !u!114 &114878820556052522
@@ -2254,7 +2255,7 @@ MonoBehaviour:
     answers:
     - answerMessage: Right
       responseDialog:
-        message: Correct
+        message: No, you are wrong
         isQuestion: 0
         answers: []
       OnResponse:
@@ -2264,7 +2265,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
     - answerMessage: Left
       responseDialog:
-        message: No sir
+        message: Yes sir, here we drive on the left side.
         isQuestion: 0
         answers: []
       OnResponse:

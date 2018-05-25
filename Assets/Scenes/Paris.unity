@@ -914,7 +914,72 @@ Prefab:
     m_Modifications:
     - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
         type: 2}
+      propertyPath: dialogs.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
       propertyPath: beforeRequiredQuestDialogs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].answers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].answers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].answers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].answers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].OnResponse.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4509509383243506, guid: 0619f9ccbc525774eb843833236bbaea, type: 2}
@@ -967,6 +1032,548 @@ Prefab:
         type: 2}
       propertyPath: beforeRequiredQuestDialogs.Array.data[0].message
       value: Bonjour
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[4].message
+      value: "Mon patron a fait quelque chose de tr\xE8s mauvais, c'est pour \xE7a
+        que j'ai d\xE9cid\xE9 de t'aider"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].message
+      value: Traducir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[2].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[0].answerMessage
+      value: SI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].answerMessage
+      value: NO
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[2].answerMessage
+      value: La ciudad del pan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2119249006}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[1].responseDialog.message
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[2].responseDialog.message
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: header
+      value: Eiffel Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[6].message
+      value: "Il s'appelle Olivier Rousseau, et hier il a voyag\xE9 en C\xF4te d'Ivoire
+        avec le petit fille"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].message
+      value: Traducir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].answers.Array.data[0].answerMessage
+      value: SI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].answers.Array.data[0].responseDialog.message
+      value: Eres Ezequiel, finalmente te encontre
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].answers.Array.data[1].answerMessage
+      value: NO
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[1].answers.Array.data[1].responseDialog.message
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[2].message
+      value: Je suis venu ici parce que je supposais que tu viendrais chercher ta
+        fille
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].message
+      value: Traducir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].message
+      value: Traducir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].answers.Array.data[0].answerMessage
+      value: SI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].answers.Array.data[0].responseDialog.message
+      value: Vine aqui porque supuse que vendrias por tu hija
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].answers.Array.data[1].answerMessage
+      value: NO
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[3].answers.Array.data[1].responseDialog.message
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[8].message
+      value: "Bonne chance. mais r\xE9ponds \xE0 cette question pour que tu puisses
+        continuer"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[8].isQuestion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[5].answers.Array.data[0].responseDialog.message
+      value: Mi jefe hizo algo muy malo, por eso decidi ayudarte
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].answers.Array.data[0].answerMessage
+      value: SI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].answers.Array.data[0].responseDialog.message
+      value: "Su nombre es Olivier Rousseau, y ayer viajo a Costa de Marfil con la
+        ni\xF1a"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].answers.Array.data[1].answerMessage
+      value: NO
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[7].answers.Array.data[1].responseDialog.message
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].message
+      value: Con que otro nombre se conoce esta ciudad?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].message
+      value: Traducir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].answers.Array.data[0].answerMessage
+      value: SI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].answers.Array.data[0].responseDialog.message
+      value: Buena suerte. pero responde esta pregunta para que puedas continuar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].answers.Array.data[1].answerMessage
+      value: NO
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[9].answers.Array.data[1].responseDialog.message
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].message
+      value: Traducir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].answerMessage
+      value: SI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.message
+      value: Con que otro nombre se conoce esta ciudad?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[2].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[0].answerMessage
+      value: La ciudad de los mares
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[1].answerMessage
+      value: La ciudad del amor
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[2].answerMessage
+      value: La ciudad de la pizza
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.message
+      value: Avec quel autre nom cette ville est-elle connue?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[2].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[0].answerMessage
+      value: La ville des juments
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[0].responseDialog.message
+      value: 'Non '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[1].answerMessage
+      value: 'La ville de l''amour '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[1].responseDialog.isQuestion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[1].responseDialog.message
+      value: Oui, bonjour
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[2].answerMessage
+      value: La ville de la pizza
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].responseDialog.answers.Array.data[2].responseDialog.message
+      value: Non
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[1].answerMessage
+      value: NO
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[0].responseDialog.message
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[1].responseDialog.message
+      value: Correcto.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].responseDialog.answers.Array.data[2].responseDialog.message
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[11].answers.Array.data[0].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].isQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[0].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[2].OnResponse.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[0].answerMessage
+      value: La ciudad de los mares
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].answerMessage
+      value: La ciudad del amor
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[2].answerMessage
+      value: La ciudad de las pizzas
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[0].responseDialog.message
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].responseDialog.message
+      value: Correcto, Bonjour
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2119249006}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[1].OnResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881535764710800, guid: 0619f9ccbc525774eb843833236bbaea,
+        type: 2}
+      propertyPath: dialogs.Array.data[10].answers.Array.data[2].responseDialog.message
+      value: No
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0619f9ccbc525774eb843833236bbaea, type: 2}
@@ -1394,7 +2001,7 @@ Prefab:
     - target: {fileID: 224617646959610456, guid: 5b10f1b88e739f44a9d594a96246648c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000007433319
+      value: -0.00009538226
       objectReference: {fileID: 0}
     - target: {fileID: 224888364582354114, guid: 5b10f1b88e739f44a9d594a96246648c,
         type: 2}

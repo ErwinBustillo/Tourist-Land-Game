@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameDataManager : MonoBehaviour {
 
+	public static GameDataManager singleton;
+
+	public GameObject jail;
 	// Use this for initialization
 	void Start () {
+		
+		singleton = this;
+
 		if (PlayerPrefs.HasKey("characterSelected")) {
 			//Debug.Log ("SI EXISTE LA LLAVE");
 			Transform t = GameObject.Find ("StartPoint").transform;
@@ -32,6 +38,10 @@ public class GameDataManager : MonoBehaviour {
 
 	public void ReloadLevel(){
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+	}
+
+	public void DisableJail(){
+		jail.SetActive (false);
 	}
 
 }

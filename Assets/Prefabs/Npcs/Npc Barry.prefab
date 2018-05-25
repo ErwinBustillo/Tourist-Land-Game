@@ -2244,7 +2244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cdf5aca9c401d4f98cabd3bb19da54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultState: 1
+  agent: {fileID: 0}
+  isMoving: 0
   waypoints: []
   destPoint: 0
 --- !u!114 &114525061282428730
@@ -2266,9 +2267,56 @@ MonoBehaviour:
   - message: "Hello, I\u2019m am Big but my name is not Ben"
     isQuestion: 0
     answers: []
+  - message: Traducir mensaje?
+    isQuestion: 1
+    answers:
+    - answerMessage: Si
+      responseDialog:
+        message: Hola, Yo soy grande y alto, pero mi nombre no es Ben.
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - answerMessage: No
+      responseDialog:
+        message: Mmm...
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
   - message: "But I know one, I\u2019ll give you a clue. It\u2019s not a person."
     isQuestion: 0
     answers: []
+  - message: Traducir Mensaje?
+    isQuestion: 1
+    answers:
+    - answerMessage: Si
+      responseDialog:
+        message: Pero yo conozco a un "Big Ben", te dare una pista. El Gran Ben no
+          es una persona.
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - answerMessage: No
+      responseDialog:
+        message: See you later
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
 --- !u!135 &135168867304607224
 SphereCollider:
   m_ObjectHideFlags: 1
