@@ -9,7 +9,8 @@ public enum Quest
     MrBlack,
     PhoneBox,
     EiffelMan,
-    Chaman
+    Chaman,
+	Sheyla
 }
 
 public class QuestManager : MonoBehaviour {

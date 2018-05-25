@@ -11,13 +11,14 @@ public class PickUpDetector : MonoBehaviour {
 	// si entra el player en contacto con el objeto
 	void OnTriggerEnter(Collider other){
 		//Muestre un texto diciendole al jugador que lo puede recoger dependiendo del tipo de objeto
-		
+		if (other.tag != "Player") return;
+		GameUIManager.Instance.Brand.SetActive (true);
 		GameUIManager.Instance.Brand.transform.Find("Text").GetComponent<Text>().text = "PRESS X TO PICKUP ITEMS";
 		//Debug.Log("ENTRO " +other.gameObject.name);
 	}
 
 	void OnTriggerStay(Collider other){
-
+		if (other.tag != "Player") return;
 		if (Input.GetKeyDown(KeyCode.X)) {
 			FindObjectOfType<Hungry> ().SubstractHungry (hungryRecoverValue);
 			FindObjectOfType<Health> ().AddLife (healthRecoverValue);
@@ -27,6 +28,7 @@ public class PickUpDetector : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other){
+		if (other.tag == "Player") return;
 		GameUIManager.Instance.Brand.transform.Find("Text").GetComponent<Text>().text = "";
 		GameUIManager.Instance.Brand.SetActive (false);
 		//Debug.Log("SALIO" + other.gameObject.name);

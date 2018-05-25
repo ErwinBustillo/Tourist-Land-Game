@@ -52,7 +52,10 @@ public class InteractionDialog : MonoBehaviour {
                     if (QuestManager.Instance.CheckQuestState(requiredTask))
                     {
                         GameUIManager.Instance.OpenDialogBox(header, dialogs);
-                        QuestManager.Instance.CompleteTask(currentTask);
+						if (currentTask != Quest.Null) {
+							QuestManager.Instance.CompleteTask(currentTask);
+						}
+                        
                     }
                     else
                     {

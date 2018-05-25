@@ -7,18 +7,17 @@ using UnityEngine.AI;
 [RequireComponent (typeof (Animator))]
 public class Npc : MonoBehaviour {
 
-	public enum STATES
-	{
-		idle, 
-		walking,
-	}
 
-	public STATES defaultState;
 	Animator anim;
-	NavMeshAgent agent;
+	[HideInInspector]
+	public NavMeshAgent agent;
+
+	[HideInInspector]
+	public bool isMoving; 
 
 	Vector2 smoothDeltaPosition = Vector2.zero;
 	Vector2 velocity = Vector2.zero;
+
 
 	[SerializeField]
 	private GameObject[] waypoints;
@@ -29,10 +28,11 @@ public class Npc : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		agent = GetComponent<NavMeshAgent> ();
 		// Don’t update position automatically
+		isMoving = true;
 		agent.updatePosition = false;
 
 		waypoints = GameObject.FindGameObjectsWithTag ("Waypoint");
-
+		anim.SetBool ("IsMoving", true);
 		destPoint = Random.Range (0, waypoints.Length);
 		GotoNextPoint ();
 	}
@@ -40,31 +40,35 @@ public class Npc : MonoBehaviour {
 	void Update () {
 		// Choose the next destination point when the agent gets
 		// close to the current one.
-		Vector3 worldDeltaPosition = agent.nextPosition - transform.position;
 
-		// Map 'worldDeltaPosition' to local space
-		float dx = Vector3.Dot (transform.right, worldDeltaPosition);
-		float dy = Vector3.Dot (transform.forward, worldDeltaPosition);
-		Vector2 deltaPosition = new Vector2 (dx, dy);
+		if (!isMoving) {
+			anim.SetFloat ("Horizontal", 0);
+			anim.SetFloat ("Vertical", 0);
+			anim.SetBool ("IsMoving", false);
+		} else {
+			Vector3 worldDeltaPosition = agent.nextPosition - transform.position;
 
-		// Low-pass filter the deltaMove
-		float smooth = Mathf.Min(1.0f, Time.deltaTime/0.15f);
-		smoothDeltaPosition = Vector2.Lerp (smoothDeltaPosition, deltaPosition, smooth);
+			// Map 'worldDeltaPosition' to local space
+			float dx = Vector3.Dot (transform.right, worldDeltaPosition);
+			float dy = Vector3.Dot (transform.forward, worldDeltaPosition);
+			Vector2 deltaPosition = new Vector2 (dx, dy);
 
-		// Update velocity if time advances
-		if (Time.deltaTime > 1e-5f)
-			velocity = smoothDeltaPosition / Time.deltaTime;
+			// Low-pass filter the deltaMove
+			float smooth = Mathf.Min(1.0f, Time.deltaTime/0.15f);
+			smoothDeltaPosition = Vector2.Lerp (smoothDeltaPosition, deltaPosition, smooth);
 
-		bool shouldMove = velocity.magnitude > 0.5f && agent.remainingDistance > agent.radius;
+			// Update velocity if time advances
+			if (Time.deltaTime > 1e-5f)
+				velocity = smoothDeltaPosition / Time.deltaTime;
 
-		// Update animation parameters
-		//anim.SetBool("move", shouldMove);
-		anim.SetFloat ("Horizontal", velocity.x);
-		anim.SetFloat ("Vertical", velocity.y);
+			anim.SetFloat ("Horizontal", velocity.x);
+			anim.SetFloat ("Vertical", velocity.y);
+			anim.SetBool ("IsMoving", true);
+			if (agent.remainingDistance < 0.5f)
+				GotoNextPoint();
+		}
+	
 
-
-		if (agent.remainingDistance < 0.5f)
-			GotoNextPoint();
 	}
 
 	void OnAnimatorMove ()
@@ -89,15 +93,20 @@ public class Npc : MonoBehaviour {
 
 	// TODO: CONDICIONAR AL NPC PARA QUE CUANDO VEA AL PLAYER DEJE DE PATRULLAR Y LO MIRE(lookat)
 	void OnTriggerEnter(Collider other){
+		
 		if (other.gameObject.tag == "Player") {
-			defaultState = STATES.idle;
+			agent.isStopped = true;
+			isMoving = false;
+		
 			transform.LookAt (other.gameObject.transform);
 		}
 	}
 
 	void OnTriggerExit(Collider other){
 		if (other.gameObject.tag == "Player") {
-			defaultState = STATES.walking;
+			agent.isStopped = false;
+			isMoving = true;
+
 		}
 	}
 
