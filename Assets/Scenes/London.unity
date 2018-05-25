@@ -3560,7 +3560,7 @@ Prefab:
     - target: {fileID: 224617646959610456, guid: 5b10f1b88e739f44a9d594a96246648c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000007723608
+      value: -0.0000051865886
       objectReference: {fileID: 0}
     - target: {fileID: 224205273385927640, guid: 5b10f1b88e739f44a9d594a96246648c,
         type: 2}
@@ -4073,6 +4073,51 @@ MonoBehaviour:
       Je parle fran\xE7ais."
     isQuestion: 0
     answers: []
+  - message: Traducir Mensaje ?
+    isQuestion: 1
+    answers:
+    - answerMessage: SI
+      responseDialog:
+        message: Si quieres ver a tu hija ven hasta mi estoy en paris
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_MethodName: 
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - answerMessage: NO
+      responseDialog:
+        message: Bonjour sir
+        isQuestion: 0
+        answers: []
+      OnResponse:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 216430053}
+            m_MethodName: LoadNextScene
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
 --- !u!65 &851687958
 BoxCollider:
   m_ObjectHideFlags: 0
